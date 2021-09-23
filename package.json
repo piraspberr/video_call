@@ -14,10 +14,13 @@
     "next": "10.x",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "nodemon": "^2.0.12",
-    "webpack": "^4.43.0",
     "peer": "^0.5.3",
     "socket.io": "^2.4.1",
-    "uuid": "^8.3.2"
+    "uuid": "^8.3.2",
+    "http-proxy-middleware": "^1.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "webpack": "^4.43.0"
   }
 }
