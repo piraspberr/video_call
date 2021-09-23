@@ -5,12 +5,13 @@
   "main": "server.js",
   "scripts": {
     "dev": "node server.js",
-    "build": "node server.js",
+    "build": "next build",
     "start": "npm-run-script-build && cross-env NODE_ENV=production node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "next": "10.x",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "nodemon": "^2.0.12",
