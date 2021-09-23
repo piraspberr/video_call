@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#Dish {
+    display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        top: 0px;
+        right: 0px;
+}
+
+#Dish video {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: #cccccc;
+    box-shadow: 0px 12px 22px rgba(0, 0, 0, 0.4);
+}
+.video-my {
+    position: relative;
+    width: 25%;
+    height: 25%;
+    align-self: flex-start;
+    overflow: hidden;
+    display: inline-block;
+    box-shadow: 0px 12px 22px rgba(0, 0, 0, 0.4);
+    background: #fff;
+}
+/* Details (optional) */
+/* Aspect Ratio Number */
+    #Dish video:after {
+        color: #aaa;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        bottom: 20px;
+        right: 23px;
+        font-weight: 100;
+        content: "4:3";
+        display: block;
+    }
+/* Gray Diagonal */
+    #Dish video:before {
+        position: absolute;
+        height: 1px;
+        background: #ddd;
+        width: 100%;
+        transform: rotate(-37deg);
+        top: 50%;
+        font-weight: 100;
+        content: "4:3";
+        display: block;
+        ;
+    }
+/* Animation */
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: scale(0.4) translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+
+.unmute, .stop{
+    color: #cc3833;
+}
