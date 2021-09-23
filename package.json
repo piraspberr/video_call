@@ -4,8 +4,9 @@
   "description": "https://warm-plateau-61975.herokuapp.com",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "npm-run-script-build && cross-env NODE_ENV=production node server.js"
   },
   "author": "",
   "license": "ISC",
